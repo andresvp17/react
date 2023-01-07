@@ -1,0 +1,44 @@
+:root{
+  --body-color: #5a6170;
+  --lavender-gradient: #f8a4d8, #6c63ff;
+}
+
+body{
+  margin: 0;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-main {
+  background-color: var(--body-color);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.routes{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.routes a{
+  color: aliceblue;
+  text-decoration: none;
+  transition: color .3s;
+}
+
+.routes a:hover{
+  color: #6c63ff;
+}
+
+.logo{
+  width: 60px;
+  padding: 30px;
+  cursor: pointer;
+}

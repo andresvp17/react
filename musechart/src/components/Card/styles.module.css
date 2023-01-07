@@ -1,0 +1,97 @@
+.card{
+    background-color: #12192c;
+    width: 150px;
+    position: relative;
+    text-align: center;
+    border-radius: 10px;
+    padding: 16px;
+    margin: 0 auto;
+}
+
+.cardImageContainer{
+    width: 100%;
+    position: relative;
+    padding-bottom: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.cardImage{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+/* .cardImageContainer::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    background: rgb(241,241,241);
+    background: linear-gradient(0deg, rgba(241,241,241,1) 17%, rgba(0,212,255,0) 100%);
+} */
+
+.cardTextContainer{
+    text-align: center;
+}
+
+.cardTextArtist{
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: rgb(196, 196, 196);
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    white-space: break-spaces;
+    margin: 0;
+}
+
+.cardTextSong{
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: rgb(236, 236, 236);
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    white-space: break-spaces;
+    margin: 0;
+}
+
+.cardColorBar{
+    width: 100%;
+    height: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+.colorBar{
+    position: absolute;
+    height: 5px;
+    width: 85%;
+    bottom: 0;
+    background-color: rgb(197 209 233);
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.selectedEmoji{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: -5px;
+    right: -5px;
+    color: aliceblue;
+    z-index: 10;
+    background-color: #44a56d;
+    border-radius: 50%;
+    cursor: pointer;
+}

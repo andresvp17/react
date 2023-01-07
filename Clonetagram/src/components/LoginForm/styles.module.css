@@ -1,0 +1,99 @@
+.loginForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 390px;
+    min-width: 320px;
+    margin: 10px auto;
+    height: 365px;
+    border: 1px solid #d1d1d1;
+}
+
+.igLogo{
+    margin: 2rem 0 1rem 0;
+}
+
+.inputContainer{
+    width: 90%;
+    border: 1px solid #d1d1d1;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.formBtnContainer{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.input{
+    width: 100%;
+    padding: 9px 0 7px 8px;
+    outline: none;
+    border: none;
+}
+
+.formBtn{
+    width: 100%;
+    outline: none;
+    border: none;
+    color: aliceblue;
+    font-weight: 600;
+    padding: 8px 9px;
+    border-radius: 4px;
+    transition: background-color .3s;
+    cursor: pointer;
+}
+
+.alreadyRegister{
+    padding: 10px 0;
+    max-width: 350px;
+    border: 1px solid #d1d1d1;
+    margin: 10px auto;
+    text-align: center;
+}
+
+.alreadyContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.alreadyContainer > p {
+    margin-right: 5px;
+    font-size: 14px;
+}
+
+.alreadyContainer > a{
+    font-weight: 600;
+    color: #2572d6;
+    font-size: 14px;
+}
+
+.enableBtn{
+    background-color: #2572d6;
+}
+
+.disableBtn{
+    background-color: rgba(0,149,246,.3);
+}
+
+@media screen and (min-width: 600px) {
+    .formBtn:hover{
+        background-color: rgba(0,149,246,.3);
+    }
+    .createAccountLink:hover{
+        color: rgba(0,149,246,.3);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .loginForm,
+    .alreadyRegister{
+        border: none;
+    }
+
+    .igLogo{
+        margin-bottom: 2rem;
+    }
+}

@@ -1,0 +1,15 @@
+.login, .register{
+    width: 100%;
+    max-width: 935px;
+    margin: 32px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+.userProfile{
+    max-width: 935px;
+    margin: 0 auto;
+}

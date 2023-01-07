@@ -1,0 +1,10 @@
+.image-link{
+    cursor: pointer;
+    min-height: 150px;
+    min-width: 250px;
+    transition: filter .3s;
+}
+
+.image-link:hover{
+    filter: contrast(1.75);
+}

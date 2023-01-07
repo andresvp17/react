@@ -1,0 +1,132 @@
+.navMain{
+    width: 15%;
+    background-color: #12192c;
+    padding: 20px;
+    position: relative;
+}
+
+.navLinks{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    padding-bottom: 0;
+    margin: 0;
+    list-style: none;
+    width: 15%;
+    height: 100vh;
+    background-color: #12192c;
+}
+
+.navLinkItem{
+    color: #ececec;
+    font-weight: 600;
+    padding: 15px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    margin-left: 10px;
+}
+
+.navLinkTitle{
+    margin: 0;
+}
+
+.navLinkItem::after{
+    content: "";
+    width: 5px;
+    height: 50%;
+    margin: auto 0;
+    position: absolute;
+    background-color: #44a56d;
+    left: 0;
+}
+
+.navLinkItem::after:hover {
+    background-color: #ffffff;
+}
+
+.mainMenuIcon{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.navHome{
+    text-decoration: none;
+    color: #ececec;
+    font-weight: 700;
+    font-size: 2rem;
+    margin: 2rem 0;
+    align-self: center;
+}
+
+@media screen and (max-width: 950px) {
+    .navLinks{
+        width: 20%;
+    }
+}
+
+@media screen and (min-width: 769px){
+    .navLinkItem{
+        background-image: linear-gradient(
+        to right,
+        #44a56d,
+        #44a56d 50%,
+        #ececec 50%
+    );
+    background-size: 200% 100%;
+    background-position: -100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    }
+
+    .navLinkItem::before{
+        content: '';
+        background: #44a56d;
+        display: block;
+        position: absolute;
+        bottom: -3px;
+        left: 0;
+        width: 0;
+        height: 3px;
+    }
+
+    .navLinkItem:hover{
+        background-position: 0;
+    }
+
+    .navLinkItem:hover::before{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .navLinks{
+        width: 60px;
+        align-items: center;
+    }
+
+    .navLinkItem::after{
+        display: none;
+    }
+
+    .navLinkItem::before{
+        display: none;
+    }
+
+    .navLinkItem{
+        padding: 15px 0;
+    }
+
+    .navLinkTitle{
+        display: none;
+    }
+
+    .navHome{
+        font-size: 1.5rem;
+    }
+}

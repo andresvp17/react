@@ -1,0 +1,77 @@
+.upperbar-container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    border-bottom: 1px solid rgb(209, 209, 209);
+    background-color: #fff;
+    z-index: 10;
+}
+
+@media screen and (min-width: 768px) {
+    .upperbar-container{
+        margin-bottom: 1rem;
+    }
+}
+
+.letter-logo{
+    max-width:175px;
+    min-width: 105px;
+    width: 30%;
+}
+
+.icons-bar{
+    display: flex;
+    align-items: center;
+    margin: 0 5px 0 auto;
+}
+
+.upperbar-icon{
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    color: #000;
+}
+
+.upperbar-avatar{
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.iconAvatar{
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.fallback{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    animation: fallback 3s infinite linear;
+    margin: 5px;
+}
+
+@keyframes fallback {
+    0%{
+        background-color: #fff;
+    }
+    50%{
+        background-color: rgb(212, 212, 212);
+    }
+    100%{
+        background-color: #fff;
+    }
+}

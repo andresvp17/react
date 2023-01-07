@@ -1,0 +1,29 @@
+.formContainer{
+    display: flex;
+    align-items: center;
+    background-color: #12192c;
+    width: 50%;
+    max-width: 400px;
+    padding: .65rem;
+    border-radius: 35px;
+}
+
+.inputSearch{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    width: 100%;
+    color: rgb(236 236 236);
+}
+
+.inputSearch::placeholder{
+    color: rgb(236 236 236);
+    font-weight: 600;
+}
+
+.searchIcon{
+    color: rgb(236 236 236);
+    width: 20px;
+    height: 20px;
+    margin-right: 15px;
+}

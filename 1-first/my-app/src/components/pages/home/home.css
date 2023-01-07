@@ -1,0 +1,43 @@
+:root{
+    --body-color: #5a6170;
+    --lavender-gradient: #a4cbf8, #6c63ff;
+    --pixels-radius: 8px;
+}
+
+.list-of-routes{
+    list-style: none;
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.list-of-routes__item{
+    text-transform: capitalize;
+}
+
+.form__btn,
+.form__input{
+    padding: 0.25rem 1.3rem;
+}
+
+.form__input{
+    outline: none;
+    border: none;
+}
+
+.form__btn{
+    outline: none;
+    border: none;
+    cursor: pointer;
+    border-top-right-radius: var(--pixels-radius);
+    border-bottom-right-radius: var(--pixels-radius);
+    background: linear-gradient(var(--lavender-gradient));
+    color: aliceblue;
+}
+
+.select__input{
+    outline: none;
+    border: none;
+    padding: 0.20rem;
+    border-top-left-radius: var(--pixels-radius);
+    border-bottom-left-radius: var(--pixels-radius);
+}

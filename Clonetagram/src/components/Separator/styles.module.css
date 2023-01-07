@@ -1,0 +1,25 @@
+.separatorContainer{
+    width: 90%;
+    display: flex;
+    margin: 10px 40px 18px;
+}
+
+.separatorCenter{
+    flex-grow: 0;
+    flex-shrink: 0;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 15px;
+    margin: 0 18px;
+    text-transform: uppercase;
+    color: #8e8e8e;
+}
+
+.separatorLine{
+    background-color: #dbdbdb;
+    flex-grow: 1;
+    flex-shrink: 1;
+    height: 1px;
+    position: relative;
+    top: 0.45em;
+}

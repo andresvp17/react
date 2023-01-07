@@ -1,0 +1,56 @@
+.statsList{
+    display: flex;
+    flex-flow: row;
+    list-style: none;
+    padding-left: 0;
+    margin-top: 0;
+}
+
+.stat{
+    margin-right: 40px;
+}
+
+.infoUser{
+    align-items: stretch;
+    border: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 1;
+    min-width: 0;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    font: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+@media screen and (min-width: 736px) {
+    .infoUser{
+        flex-basis: 30px;
+        flex-grow: 2;
+    }
+}
+
+@media screen and (max-width: 735px) {
+    .infoUser{
+        flex-basis: 0;
+        flex-grow: 1;
+    }
+}
+
+.userTitle{
+    font-weight: 100;
+    margin: 0;
+}
+
+.description{
+    white-space: break-spaces;
+}
+
+.titleAndButton{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}

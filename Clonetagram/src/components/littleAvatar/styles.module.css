@@ -1,0 +1,8 @@
+.upperbarAvatar{
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    border-radius: 50%;
+    object-fit: cover;
+}

@@ -1,0 +1,92 @@
+.formWrapper{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+
+.formContainer{
+    width: 100%;
+    height: 450px;
+    margin: 0 auto;
+    max-width: 410px;
+    min-width: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #12192c;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgb(31, 31, 31);
+}
+
+.signIn{
+    justify-self: flex-start;
+    color: #c4c4c4;
+    letter-spacing: 3px;
+    border-bottom: 3px solid #44a56d;
+}
+
+.inputContainer{
+    width: 50%;
+    position: relative;
+}
+
+.input{
+    width: 100%;
+    outline: none;
+    border: none;
+    background: none;
+    border-bottom: 2px solid #c4c4c4;
+    color: #c4c4c4;
+    caret-color: #c4c4c4;
+}
+
+.inputLabel{
+    color: #c4c4c4;
+    font-weight: 600;
+    position: absolute;
+    font-size: 14px;
+    top: -5px;
+    transition: transform .3s;
+}
+
+.input:focus + .inputLabel,
+.input:not(:placeholder-shown) + .inputLabel{
+    transform: translateY(-100%) scale(.9);
+}
+
+.input:focus,
+.input:not(:placeholder-shown){
+    border-bottom-color: #44a56d;
+}
+
+.formBtn{
+    outline: none;
+    border: none;
+    background: none;
+    color: #c4c4c4;
+    background-color: #44a56d;
+    padding: .50rem 2rem;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: .3s color, background-color .3s;
+    font-weight: 600;
+}
+
+.signUpText{
+    margin: 0;
+    color: #c4c4c4;
+}
+
+.signUpLink{
+    text-decoration: none;
+    color: #44a56d;
+    transition: color .3s;
+}
+
+@media screen and (min-width: 768px) {
+    .formBtn:hover{
+        background-color: #c4c4c4;
+        color: #44a56d;
+    }
+}

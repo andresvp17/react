@@ -1,0 +1,96 @@
+.dropzone__container{
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+}
+
+.form_post{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropTitle{
+    font-size: 40px;
+    margin: 15px 0;
+    letter-spacing: 2px;
+}
+
+.dropzone{
+    height: 50vh;
+    max-width: 600px;
+    width: 100%;
+    background-color: #ededed;
+    margin-bottom: 1rem;
+    border-radius: 9px;
+    transition: background-color .3s;
+}
+
+.dndReject{
+    background: #f59b94;
+}
+
+.dndAccept{
+    background: #baf3ae;
+}
+
+.dropzone_icon{
+    width: 75px;
+    height: 75px;
+    fill: #d1d1d1;
+    position: absolute;
+}
+
+.uploading {
+    background: #f4f4f4;
+}
+  
+  .uploaded {
+    background:#baf3ae;
+}
+
+.dropzone_btn{
+    outline: none;
+    border: none;
+    padding: 7px 14px;
+    border-radius: 5px;
+    font-weight: 700;
+    text-align: center;
+    color: #fff;
+    background-color: #0095f6;
+    cursor: pointer;
+    transition: color .2s, background-color .2s;
+}
+
+.addCommentContainer{
+    width: 80%;
+    max-width: 450px;
+    margin-bottom: 1.5rem;
+}
+
+.addComment{
+    width: 100%;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #d1d1d1;
+    font-weight: 600;
+}
+
+@media screen and (min-width: 768px) {
+    .dropzone_btn:hover{
+        background-color: #ededed;
+        color: #0095f6;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .dropzone__container{
+        width: 90%;
+    }
+
+    .dropzone{
+        max-width: 100%;
+    }
+}

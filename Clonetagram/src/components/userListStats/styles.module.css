@@ -1,0 +1,40 @@
+.statsList{
+    display: flex;
+    flex-flow: row;
+    list-style: none;
+    padding-left: 0;
+    margin-top: 0;
+}
+
+.stat{
+    margin-right: 40px;
+}
+
+.statsListMobile{
+    display: none;
+}
+
+@media screen and (max-width: 735px) {
+    .statsList{
+        display: none;
+    }
+
+    .statsListMobile{
+        display: flex;
+        flex-flow: row;
+        justify-content: center;
+        list-style: none;
+        padding-left: 0;
+        margin-top: 0;
+        width: 100%;
+        border-top: 1px solid rgb(209, 209, 209);
+        border-bottom: 1px solid rgb(209, 209, 209);
+        padding: 5px 0 5px 0;
+    }
+
+    .stat{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}

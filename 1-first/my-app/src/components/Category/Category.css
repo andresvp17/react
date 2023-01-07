@@ -1,0 +1,13 @@
+.trending__list{
+    width: 90%;
+    margin: 0 auto;
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+}
+
+.trending__list li{
+    margin-bottom: 10px;
+}

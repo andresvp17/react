@@ -1,0 +1,32 @@
+.LoadingContainer{
+    margin-top: 60px;
+    min-height: 100vh;
+    width: 100%;
+    background-color: #fff;
+    position: relative;
+    z-index: 15;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Loading{
+    width: 90px;
+    height: 90px;
+    animation: opacityAnimation 2s infinite linear;
+}
+
+@keyframes opacityAnimation {
+    0%{
+        opacity: 1;
+    }
+    25%{
+        opacity: 0.5;
+    }
+    75%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}

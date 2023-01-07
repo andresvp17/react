@@ -1,0 +1,33 @@
+.photosContainer{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(120px, 295px));
+    grid-auto-rows: auto;
+    gap: 5px;
+}
+
+@media screen and (min-width: 738px) {
+    .photosContainer{
+        gap: 28px;
+    }
+}
+
+@media screen and (max-width: 735px) {
+    .photosContainer{
+        gap: 3px;
+    }
+}
+
+.photoContainer{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    position: relative;
+    padding-bottom: 100%;
+}
+
+.photo{
+    position: absolute;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}

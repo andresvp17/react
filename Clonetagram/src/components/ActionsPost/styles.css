@@ -1,0 +1,30 @@
+.actions__container{
+    max-width: 100%;
+    padding: 8px;
+}
+
+.comment-like__container{
+    display: flex;
+    align-items: center;
+}
+
+.filled-heart{
+    fill: #ff0000;
+    animation: like ease-in-out .2s;
+}
+
+.icon{
+    width: 25px;
+    height: 25px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+@keyframes like {
+    50%{
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
