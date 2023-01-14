@@ -18,6 +18,7 @@ export const uploadPost = async ({ photoFile } = {}) => {
     .from('posts')
     .upload(`posts/${filename}.png`, photoFile)
   const file = data?.Key ? `${prefix}${data.Key}` : ''
+  console.log(file)
 
   return [file, error]
 }
@@ -33,6 +34,7 @@ export const publishPost = async ({ postSrc, description, userID } = {}) => {
         comments: 0
       }
     ])
+  console.log(data)
   return { data, error }
 }
 
